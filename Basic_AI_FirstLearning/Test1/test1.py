@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.tree import DecisionTreeRegressor
 
-# I am using my big brother's
+# I am using my big brother's computer
 data = r"C:\Users\Pannawit\Documents\GitHub\Deep-learning\Basic_AI_FirstLearning\Test1\Book1.xlsx"
 
 df = pd.read_excel(data, engine='openpyxl')
