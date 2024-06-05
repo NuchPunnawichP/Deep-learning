@@ -18,10 +18,9 @@ cv2.destroyAllWindows()
 # Second Try
 rows, cols, _ = image.shape
 # 3 by 3 matrix as it is required for the OpenCV library, don't worry about the details of it for now.
-M = np.float32(
-    [[1, 0.2, 0],
-     [-0.1, 1, 45], 
-     [0, 0, 1]])
+M = np.float32([[1, 0.2, 0],
+                [-0.1, 1, 45], 
+                [0, 0, 1]])
 image_rotated_sheared = cv2.warpPerspective(image, M, (int(cols), int(rows)))
 
 Text = "W T F"
